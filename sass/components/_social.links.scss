@@ -1,0 +1,50 @@
+/* ========= СОЦМЕРЕЖІ team========== */
+
+.socnetworks {
+  display: flex;
+  padding: 16px 32px 30px;
+}
+
+.socnetworks li {
+  width: 44px;
+  height: 44px;
+}
+
+.soclink {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--icons-color);
+  border-radius: 50%;
+
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+}
+
+.soclink-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.socnetworks li,
+.soclink {
+  padding: 0;
+  margin: 0;
+}
+
+.socnetworks li + li {
+  margin-left: 10px;
+}
+
+.soclink:hover,
+.soclink:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  outline: none;
+}
