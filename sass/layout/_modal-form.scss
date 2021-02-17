@@ -13,7 +13,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--maine-text-color);
+  color: $maine-text-color;
 }
 
 .name-label,
@@ -27,7 +27,7 @@
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .name-input,
@@ -57,13 +57,12 @@
 .tel-input:focus,
 .email-input:focus,
 .comment-input:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
 
-  transition: border var(--transition-duration)
-    var(--transition-timing-function);
+  transition: border $transition-duration $transition-timing-function;
 }
 
 button.form-send {
@@ -82,9 +81,9 @@ button.form-send {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 
-  background: var(--accent-color);
+  background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -93,7 +92,7 @@ button.form-send {
 }
 
 button.form-send:focus {
-  background: #188ce8;
+  background: $button-primary-focus-bg-color;
   background-origin: border-box;
   border: transparent;
 }
@@ -111,8 +110,8 @@ div.relative {
 }
 
 .modal-form input:focus ~ svg {
-  fill: var(--accent-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  fill: $accent-color;
+  transition: fill $transition-duration $transition-timing-function;
 }
 
 /* ==========NEW CHECKBOX======================================== */
@@ -131,11 +130,11 @@ div.relative {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .exept-form-field0 a {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .exept-form-field0 {
   position: relative;
@@ -164,22 +163,14 @@ div.relative {
 
   border-radius: 2px;
   background-image: url(../images/maine/icon-empty.svg);
-  /* border: 2px solid var(--maine-text-color); */
   background-origin: border-box;
-  /* border: transparent; */
-  /* outline: none; */
 }
 
 .checkbox0:checked + .checkbox-label0::after {
   background-image: url(../images/maine/icon-check.svg);
   background-origin: border-box;
   border-radius: 2px;
-  /* border-color: var(--accent-color); */
-  /* background-size: contain; */
-  background-origin: border-box;
-  /* border: transparent; */
-  /* outline: none; */
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  transition: fill $transition-duration $transition-timing-function;
 }
 .name-form-field,
 .tel-form-field,

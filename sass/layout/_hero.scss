@@ -1,7 +1,7 @@
 /* ==============      HERO  =================== */
 
 .hero-title {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -19,7 +19,7 @@
   min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--hero-background);
+  background-color: $hero-background;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),

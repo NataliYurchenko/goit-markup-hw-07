@@ -10,9 +10,8 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity var(--transition-duration)
-      var(--transition-timing-function),
-    visibility var(--transition-duration) var(--transition-timing-function);
+  transition: opacity $transition-duration $transition-timing-function,
+    visibility $transition-duration $transition-timing-function;
 }
 
 .modal {
@@ -24,13 +23,12 @@
 
   width: 528px;
   height: 581px;
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform var(--transition-duration)
-    var(--transition-timing-function);
+  transition: transform $transition-duration $transition-timing-function;
   /* transform: translate(-50%, -50%) scale(1); */
   transform: translate(-50%, -50%) rotate(1turn);
 }
@@ -58,7 +56,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--primary-white-color);
+  background: $primary-white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   /* outline: none; */
@@ -67,11 +65,11 @@
 }
 
 .icon-close {
-  fill: var(--header-studio-color);
+  fill: $header-studio-color;
 }
 
 .icon-close:hover,
 .icon-close:focus {
-  fill: var(--accent-color);
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  fill: $accent-color;
+  transition: fill $transition-duration $transition-timing-function;
 }

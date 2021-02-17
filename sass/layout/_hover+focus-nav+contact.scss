@@ -2,12 +2,12 @@
 .site-nav .link,
 .contact .link,
 .contact .link {
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color $transition-duration $transition-timing-function;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contact .link:hover,
 .contact .link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--footer-background);
+  background-color: $footer-background;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -27,17 +27,16 @@
 }
 
 .footer .soclink {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   background: rgba(255, 255, 255, 0.1);
 
-  transition: background-color var(--transition-duration)
-      var(--transition-timing-function),
-    box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: background-color $transition-duration $transition-timing-function,
+    box-shadow $transition-duration $transition-timing-function;
 }
 
 .footer .soclink:hover,
 .footer .soclink:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   outline: none;
 }
 
@@ -63,7 +62,7 @@
 }
 
 .footer-address > .link {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
   font-style: normal;
   text-decoration: none;
 }
@@ -82,5 +81,5 @@
   line-height: 1.142px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }

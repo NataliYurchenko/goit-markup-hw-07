@@ -23,14 +23,13 @@
   justify-content: center;
   align-items: center;
 
-  color: var(--icons-color);
+  color: $icons-color;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border var(--transition-duration)
-      var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
+  transition: border $transition-duration $transition-timing-function,
+    color $transition-duration $transition-timing-function;
 }
 
 .clients .item + .item {
@@ -43,8 +42,8 @@
 
 .clients .link:hover,
 .clients .link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  color: $accent-color;
+  border: 1px solid $accent-color;
 }
 
 .icon-logo-1 {

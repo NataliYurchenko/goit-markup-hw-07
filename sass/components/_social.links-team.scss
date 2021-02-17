@@ -17,12 +17,11 @@
   justify-content: center;
   align-items: center;
 
-  color: var(--icons-color);
+  color: $icons-color;
   border-radius: 50%;
 
-  transition: background-color var(--transition-duration)
-      var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color $transition-duration $transition-timing-function,
+    color $transition-duration $transition-timing-function;
 }
 
 .soclink-icon {
@@ -43,8 +42,8 @@
 
 .soclink:hover,
 .soclink:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: $primary-white-color;
+  background-color: $accent-color;
 
   outline: none;
 }

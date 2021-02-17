@@ -13,9 +13,7 @@
 .benefits-icon-list .item {
   width: 270px;
   height: 120px;
-  background-color: var(--button-secondary-background);
-  /* margin-left: 30px;
-  margin-bottom: 30px; */
+  background-color: $button-secondary-background;
 }
 
 .benefits-icon-list .item + .item {
@@ -33,7 +31,6 @@
 .benefits-icon {
   width: 70px;
   height: 70px;
-  /* fill: red; */
 }
 
 .benefits h3 {
@@ -51,7 +48,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   line-height: 1.71;
 }
 

@@ -2,7 +2,7 @@
   padding-top: 24px;
   padding-bottom: 25px;
 
-  color: var(--accent-color);
+  color: $accent-color;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -10,18 +10,18 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  transition: color var(--transition-duration) var(--transition-timing-function);
+  transition: color $transition-duration $transition-timing-function;
 }
 
 .header-studio {
-  color: var(--header-studio-color);
+  color: $header-studio-color;
 }
 
 .footer-studio {
-  color: var(--primary-white-color);
+  color: $primary-white-color;
 }
 
 .logo:hover,
 .logo:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
