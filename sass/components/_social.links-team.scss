@@ -3,11 +3,11 @@
 .socnetworks {
   display: flex;
   padding: 16px 32px 30px;
-}
 
-.socnetworks li {
-  width: 44px;
-  height: 44px;
+  & li {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .soclink {
@@ -22,12 +22,20 @@
 
   transition: background-color $transition-duration $transition-timing-function,
     color $transition-duration $transition-timing-function;
-}
 
-.soclink-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
+  &-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    outline: none;
+  }
 }
 
 .socnetworks li,
@@ -38,12 +46,4 @@
 
 .socnetworks li + li {
   margin-left: 10px;
-}
-
-.soclink:hover,
-.soclink:focus {
-  color: $primary-white-color;
-  background-color: $accent-color;
-
-  outline: none;
 }

@@ -89,12 +89,12 @@ button.form-send {
   cursor: pointer;
   background-origin: border-box;
   border: transparent;
-}
 
-button.form-send:focus {
-  background: $button-primary-focus-bg-color;
-  background-origin: border-box;
-  border: transparent;
+  &:focus {
+    background: $button-primary-focus-bg-color;
+    background-origin: border-box;
+    border: transparent;
+  }
 }
 
 div.relative {
@@ -131,11 +131,23 @@ div.relative {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    border-radius: 2px;
+    background-image: url(../images/maine/icon-empty.svg);
+    background-origin: border-box;
+  }
 }
 
-.exept-form-field0 a {
-  color: $accent-color;
-}
 .exept-form-field0 {
   position: relative;
   /* box-sizing: content-box; */
@@ -144,26 +156,17 @@ div.relative {
   align-items: center;
   margin-bottom: 30px;
 }
+
+.exept-form-field0 a {
+  color: $accent-color;
+}
+
 .comment-form-field {
   margin-bottom: 20px;
 }
+
 .exept0 {
   margin-left: 4px;
-}
-
-.checkbox-label0::after {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-
-  border-radius: 2px;
-  background-image: url(../images/maine/icon-empty.svg);
-  background-origin: border-box;
 }
 
 .checkbox0:checked + .checkbox-label0::after {

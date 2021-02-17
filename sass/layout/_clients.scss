@@ -3,17 +3,17 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.clients .item {
-  width: 170px;
-  height: 90px;
+  & .item {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .clients .link {
@@ -30,6 +30,12 @@
 
   transition: border $transition-duration $transition-timing-function,
     color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
 }
 
 .clients .item + .item {
@@ -38,12 +44,6 @@
 
 .clients-icon {
   fill: currentColor;
-}
-
-.clients .link:hover,
-.clients .link:focus {
-  color: $accent-color;
-  border: 1px solid $accent-color;
 }
 
 .icon-logo-1 {

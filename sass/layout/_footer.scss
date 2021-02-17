@@ -1,13 +1,15 @@
+/* ==============     FOOTER  =================== */
+
 .footer {
   background-color: $footer-background;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer .container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  & .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .footer-logo-address,
@@ -32,12 +34,12 @@
 
   transition: background-color $transition-duration $transition-timing-function,
     box-shadow $transition-duration $transition-timing-function;
-}
 
-.footer .soclink:hover,
-.footer .soclink:focus {
-  background-color: $accent-color;
-  outline: none;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    outline: none;
+  }
 }
 
 .footer-logo-address > .logo {

@@ -1,17 +1,19 @@
+/*=============JOB========================*/
+
 .job {
   padding-bottom: 94px;
-}
 
-.job-list {
-  display: flex;
-}
+  &-list {
+    display: flex;
+  }
 
-.job-link {
-  text-decoration: none;
-}
+  &-link {
+    text-decoration: none;
+  }
 
-.job-item {
-  margin: 0px;
+  &-item {
+    margin: 0px;
+  }
 }
 
 .job-list .job-item + .job-item {

@@ -11,6 +11,11 @@
   text-decoration: none;
 
   transition: color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .header-studio {
@@ -19,9 +24,4 @@
 
 .footer-studio {
   color: $primary-white-color;
-}
-
-.logo:hover,
-.logo:focus {
-  color: $accent-color;
 }

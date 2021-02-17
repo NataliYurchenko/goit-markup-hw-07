@@ -1,16 +1,5 @@
 /* ==============      HERO  =================== */
 
-.hero-title {
-  color: $primary-white-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
-  letter-spacing: 0.06em;
-
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -30,4 +19,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &-title {
+    color: $primary-white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
 }

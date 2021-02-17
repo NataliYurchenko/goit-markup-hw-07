@@ -1,12 +1,12 @@
-/* ======================FORM FOOTER=================================== */
-
-.footer-form .sign-up {
-  display: flex;
-  align-items: center;
-}
+/* ======================FORM FOOTER=========================== */
 
 .footer-form {
   margin-left: 93px;
+
+  & .sign-up {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer-form-email {
@@ -29,10 +29,10 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
 
-.footer-form-email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-sign-up-bth {

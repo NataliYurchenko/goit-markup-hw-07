@@ -66,10 +66,10 @@
 
 .icon-close {
   fill: $header-studio-color;
-}
 
-.icon-close:hover,
-.icon-close:focus {
-  fill: $accent-color;
-  transition: fill $transition-duration $transition-timing-function;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transition: fill $transition-duration $transition-timing-function;
+  }
 }
