@@ -7,19 +7,17 @@
 /*COMPONENTS*/
 @import './components/page-header';
 @import './components/logo';
-@import './components/site-nav';
+@import './components/site-nav-header';
 @import './components/contact-header';
 @import './components/btn';
+@import './components/soc-links-team';
+
 /* LAYOUT*/
-@import './layout/hover+focus-nav+contact';
 @import './layout/portfolio';
 @import './layout/hero';
 @import './layout/benefits';
 @import './layout/job';
 @import './layout/team';
-
-@import './components/social.links-team';
-
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/footer-form';

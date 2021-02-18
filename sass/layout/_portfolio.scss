@@ -1,5 +1,15 @@
 /* ================ПОРТФОЛІО========================*/
 
+.navigation {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: start;
+}
+
+.navigation .item + .item {
+  margin-left: 8px;
+}
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
